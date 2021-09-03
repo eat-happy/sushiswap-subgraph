@@ -18,7 +18,11 @@
 ```shell
     yarn build
 ```
-6、deploy
+6、auth
+```shell
+graph auth https://api.hg.network/subgraph/deploy <ACCESS_TOKEN>
+```
+7、deploy
 ```shell
     yarn deploy
 ```
