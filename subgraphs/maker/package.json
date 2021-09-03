@@ -13,7 +13,9 @@
 
         "prepare:mainnet": "mustache config/mainnet.json template.yaml > subgraph.yaml",
 
-        "deploy": "graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ sushiswap/sushi-maker subgraph.yaml",
-        "deploy-studio": "graph deploy --studio sushi---sushimaker"
+        "deploy": "graph deploy --node https://api.hg.network/subgraph/deploy --ipfs https://f.hg.network sushiswap/sushi-maker subgraph.yaml",
+        "deploy-studio": "graph deploy --studio sushi---sushimaker",
+        "prepare:okex": "mustache config/okex.json template.yaml > subgraph.yaml"
+
     }
 }

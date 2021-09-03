@@ -6,7 +6,7 @@
     "scripts": {
         "codegen": "graph codegen subgraph.yaml",
         "build": "graph build subgraph.yaml",
-        "deploy": "graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ sushiswap/bar subgraph.yaml",
+        "deploy": "graph deploy --node https://api.hg.network/subgraph/deploy --ipfs https://f.hg.network sushiswap/bar subgraph.yaml",
         "deploy-studio": "graph deploy --studio sushi---sushibar",
         "create-local": "graph create --node http://localhost:8020/ /sushiswap/sushiswap",
         "remove-local": "graph remove --node http://localhost:8020/ /sushiswap/sushiswap",
@@ -15,6 +15,8 @@
         "prepare:kovan": "mustache config/kovan.json template.yaml > subgraph.yaml",
         "prepare:mainnet": "mustache config/mainnet.json template.yaml > subgraph.yaml",
         "prepare:rinkeby": "mustache config/rinkeby.json template.yaml > subgraph.yaml",
-        "prepare:ropsten": "mustache config/ropsten.json template.yaml > subgraph.yaml"
+        "prepare:ropsten": "mustache config/ropsten.json template.yaml > subgraph.yaml",
+        "prepare:okex": "mustache config/okex.json template.yaml > subgraph.yaml"
+
     }
 }

@@ -2,13 +2,14 @@
   "name": "@sushiswap/subgraphs",
   "private": true,
   "workspaces": [
-    "packages/*",
     "subgraphs/*"
   ],
   "scripts": {
     "build": "yarn workspaces run build",
+    "deploy": "yarn workspaces run deploy",
     "codegen": "yarn workspaces run codegen",
     "prepare:bsc": "yarn workspaces run prepare:bsc",
+    "prepare:okex": "yarn workspaces run prepare:okex",
     "prepare:fantom": "yarn workspaces run prepare:fantom",
     "prepare:goerli": "yarn workspaces run prepare:goerli",
     "prepare:kovan": "yarn workspaces run prepare:kovan",
